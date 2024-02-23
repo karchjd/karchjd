@@ -1,4 +1,4 @@
-# Welcome to my GitHub profile!
+# Welcome!
 
 I'm a professor for research methods at the Department of Psychology at the MSB Medical School Berlin and a senior research scientist at the Center for Lifespan Psychology at the Max Planck Institute for Human Development.
 
@@ -12,3 +12,6 @@ If you are here for our structural equation modeling semtree package, you can fi
 
 ![](profile-3d-contrib/profile-gitblock.svg)
 
+## Let's colaborate 
+
+🚀 I'm always open to collaborating on exciting projects and ideas. Feel free to reach out!
