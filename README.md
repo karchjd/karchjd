@@ -4,8 +4,6 @@ I'm a professor for research methods at the Department of Psychology at the MSB 
 
 If you are here for our structural equation modeling semtree package, you can find it [here](https://github.com/brandmaier/semtree).
 
-🌱 I’m currently learning about XAI for psychological data.
-
 📫 How to reach me: brandmaier@mpib-berlin.mpg.de
 
 💬 Ask me about statistics, data wrangling, machine learning, multivariate models, latent variable models, longitudinal research designs or anything else.
