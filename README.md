@@ -8,6 +8,8 @@
 <img align="left" alt="Andreas Brandmaier" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />
 </a>
 
+<p>&nbsp;</p>
+
 I'm a professor for research methods at the Department of Psychology at the MSB Medical School Berlin and a senior research scientist at the Center for Lifespan Psychology at the Max Planck Institute for Human Development.
 
 If you are here for our structural equation modeling semtree package, you can find it [here](https://github.com/brandmaier/semtree).
