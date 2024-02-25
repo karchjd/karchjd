@@ -2,7 +2,9 @@
 
 <canvas id="cnv"></canvas>
 
-<script src="stars.js"></script>
+<script src="stars.js">
+  
+</script>
 
 <a href="https://twitter.com/brandmaier">
 <img align="left" alt="Andreas Brandmaier| Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />
