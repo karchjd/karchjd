@@ -1,6 +1,3 @@
----
-title: Welcome Page
----
 # Welcome!
 
 <canvas id="cnv"></canvas>
