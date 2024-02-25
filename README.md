@@ -1,7 +1,7 @@
 # Welcome!
 
 <canvas id="cnv"></canvas>
-```{js}
+```{js, eval=TRUE}
 cnv.width = 200;
 cnv.height = 10;
 ctx.fillStyle = "#112";
