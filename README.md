@@ -1,13 +1,5 @@
 # Welcome!
 
-<canvas id="cnv"></canvas>
-```{js, eval=TRUE}
-cnv.width = 200;
-cnv.height = 10;
-ctx.fillStyle = "#112";
-ctx.fillRect(0, 0, 200, 10)
-```
-
 <a href="https://twitter.com/brandmaier">
 <img align="left" alt="Andreas Brandmaier| Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />
 </a>
