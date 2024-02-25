@@ -1,6 +1,7 @@
 # Welcome!
 
 <canvas id="cnv"></canvas>
+<script src="stars.js"></script>
 
 <a href="https://twitter.com/brandmaier">
 <img align="left" alt="Andreas Brandmaier| Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />
@@ -11,13 +12,13 @@
 
 <p>&nbsp;</p>
 
-I'm a professor for research methods at the Department of Psychology at the MSB Medical School Berlin and a senior research scientist at the Center for Lifespan Psychology at the Max Planck Institute for Human Development.
+I'm a professor for research methods at the Department of Psychology at the MSB Medical School Berlin and a senior research scientist at the Center for Lifespan Psychology at the Max Planck Institute for Human Development. I believe in free software and open science.
 
 If you are here for our structural equation modeling semtree package, you can find it [here](https://github.com/brandmaier/semtree).
 
 📫 How to reach me: brandmaier@mpib-berlin.mpg.de
 
-💬 Ask me about statistics, data wrangling, machine learning, multivariate models, latent variable models, longitudinal research designs or anything else.
+💬 Ask me about statistics, data wrangling, machine learning, multivariate models, latent variable models, longitudinal research designs, open science or anything else.
 
 🔭 I’m currently working on Onyx, SEM trees, and optimal longitudinal study design
 
