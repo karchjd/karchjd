@@ -17,4 +17,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
        run: |
-          Rscript -e "print(Sys.getenv('USERNAME'))"
+          Rscript -e "install.packages('gh')"
+          Rscript graph.R
