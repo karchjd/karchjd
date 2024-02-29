@@ -1,0 +1,16 @@
+name: Test-R
+
+
+permissions: write-all  
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: generate-github-profile-3d-contrib
+    steps:
+     - name: Commit & Push
+       env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+       run: |
+          Rscript -e "print(Sys.getenv('USERNAME'))"
