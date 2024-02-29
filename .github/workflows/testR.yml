@@ -10,9 +10,14 @@ permissions: write-all
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: generate-github-profile-3d-contrib
+    name: generate graph
     steps:
-     - name: Commit & Push
+     - name: Set up R
+       uses: r-lib/actions/setup-r@v1
+       with:
+        r-version: 4.x
+        
+     - name: Generate graph
        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
