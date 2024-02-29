@@ -24,10 +24,11 @@ jobs:
 
      - name: Dependencies
        run: Rscript -e "install.packages('gh')"
-#       uses: r-lib/actions/setup-r-dependencies@v2
-#       with:
-#          extra-packages: gh
-#          needs: check
+     - name: Checkout repository
+       uses: actions/checkout@v2
+       with:
+          repository: brandmaier/brandmaier
+          ref: main  # specify the branch 
         
      - name: Generate graph
        env:
