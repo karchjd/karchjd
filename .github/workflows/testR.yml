@@ -23,10 +23,11 @@ jobs:
 
 
      - name: Dependencies
-       uses: r-lib/actions/setup-r-dependencies@v2
-       with:
-          extra-packages: gh
-          needs: check
+       run: Rscript -e "install.packages('gh')"
+#       uses: r-lib/actions/setup-r-dependencies@v2
+#       with:
+#          extra-packages: gh
+#          needs: check
         
      - name: Generate graph
        env:
