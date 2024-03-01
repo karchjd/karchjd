@@ -23,7 +23,7 @@ jobs:
 
 
      - name: Dependencies
-       run: Rscript -e "install.packages('gh')"
+       run: Rscript -e "install.packages('gh','dplyr','ggplot2')"
      - name: Checkout repository
        uses: actions/checkout@v2
        with:
