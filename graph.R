@@ -24,4 +24,4 @@ dates <- ordered(dates, levels=all_weekdays)
 plt <- tibble(dates)%>% 
   ggplot(aes(x=dates,fill=dates))+geom_bar(stat="count")
 
-ggsave("weekdays.png", plot = plt, width = 300, height = 150)
+ggsave("weekdays.png", plot = plt, width = 3, height = 1.5)
