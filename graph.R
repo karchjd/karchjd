@@ -22,6 +22,8 @@ dates <- ordered(dates, levels=all_weekdays)
 
 #data.frame(weekday=names(table(dates)),frequency=table(dates))
 plt <- tibble(dates)%>% 
-  ggplot(aes(x=dates,fill=dates))+geom_bar(stat="count")
+  ggplot(aes(x=dates,fill=dates))+
+geom_bar(stat="count")+
+theme(axis.text.x = element_text(angle=45))
 
-ggsave("weekdays.png", plot = plt, width = 3, height = 1.5)
+ggsave("weekdays.png", plot = plt, width = 6, height = 3)
