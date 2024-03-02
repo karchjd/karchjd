@@ -1,4 +1,4 @@
-welibrary(gh)
+library(gh)
 query <- gh("GET /repos/{username}/brandmaier/commits",
                username = "brandmaier", per_page=100)
 
