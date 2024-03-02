@@ -1,4 +1,4 @@
-library(gh)
+welibrary(gh)
 query <- gh("GET /repos/{username}/brandmaier/commits",
                username = "brandmaier", per_page=100)
 
@@ -24,6 +24,7 @@ dates <- ordered(dates, levels=all_weekdays)
 plt <- tibble(dates)%>% 
   ggplot(aes(x=dates,fill=dates))+
 geom_bar(stat="count")+
-theme(axis.text.x = element_text(angle=45))
+theme(axis.text.x = element_text(angle=45))+
+guides(color = "none")
 
 ggsave("weekdays.png", plot = plt, width = 6, height = 3)
