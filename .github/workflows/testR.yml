@@ -1,4 +1,4 @@
-name: Test-R
+name: Weekday
 
 on:
 #  schedule: # 03:00 JST == 18:00 UTC
@@ -13,9 +13,9 @@ jobs:
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
       R_KEEP_PKG_SOURCE: yes
-    name: generate graph
+    name: generate chart
     steps:
-     - name: curl
+     - name: install curl
        run: sudo apt-get install -y libcurl4-openssl-dev
 
      - name: Set up R
@@ -26,24 +26,25 @@ jobs:
 
 
      - name: Dependencies
-       run: Rscript -e "install.packages(c('curl','gh','dplyr','ggplot2'))"
+       run: Rscript -e "install.packages(c('curl','gh','dplyr','ggplot2','viridis'))"
      - name: Checkout repository
        uses: actions/checkout@v2
        with:
-          repository: brandmaier/brandmaier
+          repository: brandmaier/weekdaychart
           ref: main  # specify the branch 
         
      - name: Generate graph
        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
+          REPOSITORY: ${{ github.event.repository.name }}
        run: |
-          Rscript graph.R
+          Rscript chart.R
 
      - name: Commit & Push
        run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
-          git commit -am "updated weekday graph"
+          git commit -am "updated weekday chart"
           git push
