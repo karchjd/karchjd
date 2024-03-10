@@ -8,4 +8,4 @@ on:
 jobs:
   build chart:
     steps:
-    - uses: brandmaier/weekdays
+    - uses: brandmaier/weekdaychart@weekday
