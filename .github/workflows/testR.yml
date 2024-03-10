@@ -1,6 +1,10 @@
 name: 'Weekday chart'
 description: 'Build a chart displaying commits per day of week'
 author: 'Andreas M. Brandmaier'
+on:
+# This command allows us to run the Action manually from the Actions tab.
+  workflow_dispatch:
+  
 jobs:
   build chart:
     steps:
