@@ -5,6 +5,8 @@ on:
   workflow_dispatch:
   
 jobs:
-  build chart:
-    steps:
-    - uses: brandmaier/weekdaychart@weekday
+  build:
+    runs-on: ubuntu-latest
+  steps:
+    - name: generate chart
+      uses: brandmaier/weekdaychart@weekday
