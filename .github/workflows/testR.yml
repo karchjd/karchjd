@@ -10,4 +10,4 @@ jobs:
     name: hi
     steps:
      - name: generate chart
-       uses: brandmaier/weekdaychart@238b1e15f164dc7f9fab7912c13124d7d0d0cf61
+       uses: brandmaier/weekdaychart@main
