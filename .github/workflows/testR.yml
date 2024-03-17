@@ -6,8 +6,22 @@ on:
   
 jobs:
   build:
-    runs-on: ubuntu-latest
-    name: hi
+    runs-on: ubuntu-latest            
+    name: Generating Chart
     steps:
-     - name: generate chart
+     - name: Checkout repository
+       uses: actions/checkout@v2
+       with:
+          repository: brandmaier/weekdaychart
+          ref: main  # specify the branch 
+     
+     - name: Drawing chart
        uses: brandmaier/weekdaychart@main
+     
+     - name: Commit & Push
+       run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -am "updated weekday chart"
+          git push
