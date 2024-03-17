@@ -17,6 +17,10 @@ jobs:
      
      - name: Drawing chart
        uses: brandmaier/weekdaychart@main
+       with:
+         github_pat: ${{ secrets.GITHUB_TOKEN }}
+         username: ${{ github.repository_owner }}
+         repository: ${{ github.event.repository.name }}
      
      - name: Commit & Push
        run: |
