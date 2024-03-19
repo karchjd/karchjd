@@ -12,16 +12,18 @@ jobs:
      - name: Checkout repository
        uses: actions/checkout@v2
        with:
-          repository: "${{ github.repository }}"
+          repository: brandmaier
           ref: main  # specify the branch 
      - name: Status
        run: echo "💡 Preparing to create chart for ${{ github.event.repository }} ."
      - name: Drawing chart
        uses: brandmaier/weekdaychart@main
        with:
-         github_pat: "${{ secrets.GITHUB_TOKEN }}"
-         username: "${{ github.repository_owner }}"
-         repository: "${{ github.event.repository.name }}"
+         github_pat: ${{ secrets.GITHUB_TOKEN }}
+#         username: ${{ github.repository_owner }}
+#         repository: ${{ github.event.repository.name }}
+         username: brandmaier
+         repository: brandmaier
      
      - name: Commit & Push
        run: |
