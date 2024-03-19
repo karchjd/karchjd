@@ -14,7 +14,8 @@ jobs:
        with:
           repository: brandmaier/weekdaychart
           ref: main  # specify the branch 
-     
+     - name: Status
+       run: echo "💡 Preparing to create chart for ${{ github.event.repository }} ."
      - name: Drawing chart
        uses: brandmaier/weekdaychart@main
        with:
