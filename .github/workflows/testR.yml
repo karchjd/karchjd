@@ -12,7 +12,7 @@ jobs:
      - name: Checkout repository
        uses: actions/checkout@v2
        with:
-          repository: brandmaier/weekdaychart
+          repository: ${{ github.event.repository.name }}
           ref: main  # specify the branch 
      - name: Status
        run: echo "💡 Preparing to create chart for ${{ github.event.repository }} ."
